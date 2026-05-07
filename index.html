@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedBlock Games | Official Studio</title>
+    <style>
+        /* Основные настройки */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d; /* Глубокий черный */
+            color: #eeeeee;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Шапка с названием студии */
+        header {
+            width: 100%;
+            padding: 60px 0;
+            background: linear-gradient(180deg, #1a0505 0%, #0d0d0d 100%);
+            text-align: center;
+            border-bottom: 2px solid #ff4d4d;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: 5px;
+            color: #ff4d4d;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(255, 77, 77, 0.4);
+            border: 4px solid #ff4d4d;
+            display: inline-block;
+            padding: 10px 30px;
+            transition: 0.3s;
+        }
+
+        .logo:hover {
+            background-color: #ff4d4d;
+            color: #0d0d0d;
+            box-shadow: 0 0 50px rgba(255, 77, 77, 0.6);
+        }
+
+        /* Контент */
+        .container {
+            max-width: 900px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        /* Карточка проекта */
+        .project-card {
+            background: #161616;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            border-left: 5px solid #ff4d4d;
+            transition: transform 0.3s, background 0.3s;
+            text-align: left;
+        }
+
+        .project-card:hover {
+            transform: translateX(10px);
+            background: #1f1f1f;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #ff4d4d;
+            margin: 0 0 10px 0;
+        }
+
+        .status {
+            display: inline-block;
+            background: #331111;
+            color: #ff8080;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Футер */
+        footer {
+            margin-top: auto;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Анимация появления */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container { animation: fadeIn 1s ease-out; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">RedBlock Games</div>
+</header>
+
+<div class="container">
+    <p style="font-size: 1.2rem; color: #aaa;">Разработка игр с упором на реализм и физику.</p>
+    
+    <h2>Наши разработки</h2>
+
+    <div class="project-card">
+        <div class="status">В РАЗРАБОТКЕ</div>
+        <h3 class="project-title">Project: Trauma</h3>
+        <p>Тактический шутер с упором на реалистичную анатомию, физику тела и систему X-Ray попаданий. Мы переосмысливаем подход к повреждениям в играх.</p>
+    </div>
+
+    <div class="project-card">
+        <div class="status">ПЛАНИРУЕТСЯ</div>
+        <h3 class="project-title">Zanzibar City</h3>
+        <p>Масштабный проект по переносу виртуального города в полноценную игровую среду.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 RedBlock Games Studio. Все права защищены.
+</footer>
+
+</body>
+  </html>
+  
